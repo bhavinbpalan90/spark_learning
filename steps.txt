@@ -1,3 +1,4 @@
 Install Java
+Install Apache Spark
 Install pyspark
 Install findspark
