@@ -3,5 +3,6 @@ Install Apache Spark
 Install pyspark
 Install findspark
 
+install delta-spark 
 
 conda activate sparklearning
