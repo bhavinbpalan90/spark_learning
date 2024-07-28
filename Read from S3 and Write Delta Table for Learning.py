@@ -30,5 +30,14 @@ df_parquet_json_transformed.limit(15).write.format("delta").option("mergeSchema"
 
 # COMMAND ----------
 
+
+
+# COMMAND ----------
+
 # MAGIC %sql
 # MAGIC SELECT count(*) FROM bhavinpalan.learning.crunchbase_delta LIMIT 10;
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC REORG TABLE bhavinpalan.learning.CRUNCHBASE_DELTA APPLY (UPGRADE UNIFORM(ICEBERG_COMPAT_VERSION=2));
