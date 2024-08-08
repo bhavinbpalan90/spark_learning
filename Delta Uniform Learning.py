@@ -44,3 +44,7 @@ df_parquet_read.write.format("delta").option("mergeSchema", "true").mode("append
 
 # MAGIC %sql
 # MAGIC REORG TABLE bhavinpalan.learning.zillow_v1 APPLY (UPGRADE UNIFORM(ICEBERG_COMPAT_VERSION=2));
+
+# COMMAND ----------
+
+
