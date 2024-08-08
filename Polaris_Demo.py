@@ -19,4 +19,5 @@ spark = SparkSession.builder.appName('iceberg_lab') \
 
 # COMMAND ----------
 
-spark.sql("show warehouse").show()
+spark.sql("show namespaces").show()
+
